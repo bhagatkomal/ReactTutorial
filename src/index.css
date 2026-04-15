@@ -1,0 +1,273 @@
+/* /* @import "tailwindcss";
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+* { 
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; 
+font-family: "Urbanist", sans-serif; 
+} 
+
+html { 
+font-size: 62.5%; 
+} 
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 { 
+color: var(--heading-color); 
+font-family: "Poppins", sans-serif; 
+font-weight: 900; 
+} 
+h1 { 
+font-size: 3.2rem; 
+} 
+p, 
+li, 
+a, 
+label{ 
+font-size: 1.8rem; 
+letter-spacing: 0.1rem; color: var(--para-color); line-height: 1.5; 
+font-weight: 400; 
+} 
+li { 
+list-style: none; 
+} 
+a { 
+text-decoration: none; 
+} 
+
+:root { 
+ 
+  --main-color: #0062ff; 
+  --supporting-color: 
+  #ebf3fe; 
+  --heading-color: #000a19; 
+  --h-color: #0a043c; 
+  --font-color: #424242;
+  --bg-color: #ffffff;
+
+  --test: #070101; 
+
+--white-color: #ffffff; 
+--para-color: #504e4d; 
+--bnt-hover-bg-color: #003b99; 
+--btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+.container { 
+
+  margin: 0 auto;  
+  max-width: 142rem; 
+  padding: 9.6rem 2.4rem; 
+}
+
+.grid { 
+  display: grid; 
+  gap: 9.6rem; 
+}  
+
+.grid-two-cols { 
+  grid-template-columns: repeat (2, 1fr); 
+}
+.grid-three-cols { 
+  grid-template-columns: repeat(3, 1fr); 
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #1c2833;
+  --secondary-color: #fff;
+  --bg-color: #f2f3f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 20px;
+  width: 400px;
+  position: absolute;
+  top:12% !important;
+  transform: translate(-50%, 5%) !important;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+input[type="phone"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="phone"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 0.6rem;
+  color: #0eb7f4;
+}
+label,
+p {
+  font-size: 1.6rem;
+}
+p {
+  margin-bottom: 3.2rem;
+  font-size: 1.8rem;
+}
+
+/* Change styles for signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+    width: 100%;
+  }
+}
